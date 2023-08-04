@@ -1,11 +1,10 @@
-import Topbar from "./components/Topbar";
-import Home from "./pages/Home";
 
- export default function App() {
+import Home from "./pages/home/Home";
+
+export default function App() {
     return (
         <>
-            <Topbar/>
-            <Home/>
+            <Home />
         </>
     );
 

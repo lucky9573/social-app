@@ -8,11 +8,13 @@ export default function Topbar() {
                 <span className="logo">Social</span>
             </div>
             <div className="topbarCenter">
-                <Search />
-                <input
-                    placeHolder="Search for the friend, post, or video"
-                    className="searchInput"
-                />
+                <div className="searchbar">
+                    <Search className="searchIcon" />
+                    <input
+                        placeHolder="Search for the friend, post, or video"
+                        className="searchInput"
+                    />
+                </div>
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
