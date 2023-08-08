@@ -130,7 +130,7 @@ export const Posts = [
     },
     {
         id: 10,
-        photo: "assets/post/post-10png"",
+        photo: "assets/post/post-10png",
         date: "1 week ago",
         userId: 10,
         like: 104,

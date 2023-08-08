@@ -11,7 +11,7 @@ export default function Topbar() {
                 <div className="searchbar">
                     <Search className="searchIcon" />
                     <input
-                        placeHolder="Search for the friend, post, or video"
+                        placeholder="Search for the friend, post, or video"
                         className="searchInput"
                     />
                 </div>
