@@ -1,5 +1,7 @@
 import './sidebar.css';
-import { RssFeed,Group,PlayCircleFilledOutlined,Bookmark,HelpOutline,WorkOutline } from '@mui/icons-material';
+import { RssFeed, Group, PlayCircleFilledOutlined, Bookmark, HelpOutline, WorkOutline } from '@mui/icons-material';
+import { Users } from "../../dummyData";
+import CloseFriend from '../closefriend/CloseFriend';
 export default function Sidebar() {
     return (
         <>
@@ -34,110 +36,9 @@ export default function Sidebar() {
                     <button className="sidebarButton">show more</button>
                     <hr className="sidebarHr" />
                     <ul className="sidebarFriendList">
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        <li className="sidebarFriend">
-                            <img src="/assets/person/person-1.png" alt="" className="sidebarFriendImg" />
-                            <span className="sidebarImageText">
-                                Cicily
-                            </span>
-                        </li>
-                        
+                        {Users.map(u => (
+                            <CloseFriend key={u.id} user={u} />
+                        ))} 
                     </ul>
                   
                 </div>

@@ -1,19 +1,15 @@
 import './online.css';
 
-export default function Online({ users }) {
-    console.log(users);
+export default function Online({ user }) {
     return (
-        <>
-            <ul className="rightBarFriendList">
-                <li className="rightBarFriend">
-                    <div className="rightBarProfileImgContainer">
-                        <img src="assets/person/person-3.png" alt="" className="rightBarProfileImg" />
-                        <span className="rightBarOnline"></span>
-                    </div>
-                    <span className="rightBarUsername"></span>
-                </li>
-
-            </ul>
-        </>
+             <div>      
+            <li className="rightBarFriend">
+                <div className="rightBarProfileImgContainer">
+                    <img src={user.profilePicture } alt="" className="rightBarProfileImg" />
+                    <span className="rightBarOnline"></span>
+                </div>
+                <span className="rightBarUsername">{user.username }</span>
+            </li>
+        </div>
     );
 }
