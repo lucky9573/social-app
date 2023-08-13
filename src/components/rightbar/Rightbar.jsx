@@ -12,7 +12,7 @@ export default function Rightbar() {
                             <b> Pola Foster</b> and <b>3 other friends </b>have a birthday today.
                         </span>
                     </div>
-                    <img src="assets/post/post-2.png" alt="" className="rightbarAd" />
+                    <img src="assets/ad.png" alt="" className="rightbarAd" />
                     <h4 className="rightBarTitle">Online Friends</h4>
                     
                     <ul className="rightBarFriendList">
