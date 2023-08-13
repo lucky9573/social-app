@@ -1,10 +1,9 @@
 .sidebar{
     flex:2.5;
-    height: calc(100vh-50px);
-    overflow-y:scroll;
+    height: 700px;
+    overflow-y: scroll;
     position: sticky;
-    top: 50px;
-    
+    top: 40px;    
 }
 ::-webkit-scrollbar{
     width:5px;
@@ -17,13 +16,11 @@
 }
 .sidebarWrapper{
     padding:20px;
-    
 }
 .sidebarList{
     padding :0;
     margin:0;
     list-style: none;
-    
 }
 .sidebarListItem{
     padding:20px;

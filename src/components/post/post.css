@@ -10,12 +10,12 @@
 }
 .postTop{
     display:flex;
+    align-items: center;
     justify-content: space-between;
 }
 .postTopLeft{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .postProfileImg{
     height: 40px;
@@ -24,7 +24,8 @@
     border-radius: 50%;
 }
 .postUsername{
-    font-weight: 300px;
+    font-size: 15px;
+    font-weight: 300;
     margin:0 10px;
 }
 .postDate{
@@ -61,10 +62,8 @@
     display:flex;
     align-items:center;
 }
-.postBottomRight{
-    float:right;
-}
-.postCommentText{
+
+.postLikeCount{
     font-size:15px;
 }
 .postCommentText{
