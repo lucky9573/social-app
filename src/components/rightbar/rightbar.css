@@ -60,3 +60,37 @@ font-weight: 500;
     width: 100%;
     height:140px;
 }
+.RightBarInfo{
+    margin:10px 0;    
+}
+
+.RightBarInfoKey{
+    font-weight:500;
+    margin-right:15px;
+    color:rgb(116, 152, 230);
+}
+.rightBarInfoValue{
+    font-weight:300;
+}
+
+.rightBarTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin:auto;
+}
+.rightBarFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.rightBarFollowing{
+    display: flex;
+    margin:0 2px;
+    flex-direction: column;
+}
+.rightBarFollowings{  
+   display: flex;
+   flex-wrap: wrap;
+ 
+}

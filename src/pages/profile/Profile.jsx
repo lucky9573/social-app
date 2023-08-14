@@ -19,13 +19,12 @@ export default function Profile() {
                         <div className="profileInfo">
                             <div className="profileInfoUser"><b>Sadiday</b></div>
                             <div className="profileInfoDesc">Hello friends</div>
-
                         </div>
                         
                     </div>
                     <div className="profileRightBottom">
                         <Feed />
-                        <Rightbar />
+                        <Rightbar profile/>
                     </div>
                     
                 </div>
